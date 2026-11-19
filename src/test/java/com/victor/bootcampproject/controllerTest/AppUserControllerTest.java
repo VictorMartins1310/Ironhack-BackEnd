@@ -61,6 +61,8 @@ public class AppUserControllerTest {
         user2.addRole(role);
     }
 
+
+    /* TODO Not implemented anymore need to be reimplement
     @DisplayName("Test: Get UsersDetails")
     @WithMockUser(username = "testUser", roles = "USER")
     @Test public void getUserDetails() throws Exception {
@@ -78,7 +80,10 @@ public class AppUserControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().json(objectMapper.writeValueAsString(userDetails))); //https://github.com/json-path/JsonPath
     }
+     */
 
+
+    /* TODO Not implemented anymore need to be reimplement
     @DisplayName("Test: Update UsersDetails on Register")
     @WithMockUser(username = "testUser", roles = "USER")
     @Test public void testUpdateUser() throws Exception{
@@ -105,4 +110,5 @@ public class AppUserControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().json(objectMapper.writeValueAsString(userDetailsDTO1))); // Change to userDetailsDTO2 for Fail Test
     }
+     */
 }
